@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Useful
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.quickOpen",
+    "when": "!terminalFocus && !editorTextFocus"
+  },
+  // Navigation
+
+  // Terminal
+  {
+    "key": "cmd+h",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+
+  // File Tree
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "cmd+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "window.zoomLevel": 0.75,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.accessibilitySupport": "off",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "breadcrumbs.enabled": false,
+
+  // Zen Mode
+  "zenMode.hideLineNumbers": true,
+
+  // Git
+  "git.autofetch": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+
+  // Vibes
+  "powermode.enabled": true,
+  "powermode.combo.counterSize": 0,
+  "powermode.shake.enabled": false,
+  "powermode.combo.counterEnabled": "hide",
+  "powermode.combo.location": "off",
+
+  "vscode-pets.theme": "none",
+  "vscode-pets.position": "explorer",
+  "vscode-pets.petSize": "small",
+
+  // Vim
+  "vim.leader": "<Space>",
+  "vim.camelCaseMotion.enable": true,
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Navigation
+    // Switch between buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // Splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // Panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+    // Useful commands
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    {
+      "before": ["leader", "a"],
+      "commands": ["workbench.action.toggleActivityBarVisibility"]
+    },
+    {
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["leader", "leader"],
+      "commands": ["workbench.action.findInFiles"]
+    }
+  ],
+
+  // Languages
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+
+  // File Associations
+  "files.associations": {
+    "*.json": "json",
+    ".gitignore": "git-rebase",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact",
+    "*.css": "css",
+    "*.py": "python"
+  },
+
+  // Typescript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Javascript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "dart.flutterSdkPath": "/Users/jakeevans/development/flutter",
+  "svelte.enable-ts-plugin": true,
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+
+  // CSS
+  "css.lint.unknownAtRules": "ignore",
+
+  // Emmet
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "workbench.statusBar.visible": false,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+  "window.titleBarStyle": "custom",
+  "editor.tokenColorCustomizations": {
+    "[ultrafocus dark]": {
+      "keywords": "#42d9fc",
+      "textMateRules": [
+        {
+          "scope": "keyword.operator.expression.instanceof,keyword.operator.new,keyword.operator.ternary",
+          "settings": {
+            "foreground": "#ff46fc"
+          }
+        }
+      ]
+    }
+  },
+  "workbench.colorTheme": "Arcane Jinx"
+}
